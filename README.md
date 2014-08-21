@@ -1,10 +1,16 @@
-#cucumber-symbolic-hashes
+# cucumber-symbolic-hashes
 
 A very simple extension gem used to remove duplication in cucumber test suite. 
 
-
-<script src="https://gist.github.com/dmorgan3405/910c9fa6b99ba15aacf2.js"></script>
-
+# Example Usage
+````ruby
+Given(/^the following employees exist:$/) do |employee_table|
+  employee_table.symbolic_hashes.each do |employee_hash|
+    EmployeeFactory.create_from(employee_hash)
+  end
+end
+````
+    
 
 Blog post on why to use this extension: 
 
