@@ -2,6 +2,10 @@
 
 A very simple extension gem used to remove duplication in cucumber test suites. 
 
+# Installation 
+	
+gem install 'cucumber-symbolic-hashes'
+
 # Example Usage
 ````ruby
 Given(/^the following employees exist:$/) do |employee_table|
