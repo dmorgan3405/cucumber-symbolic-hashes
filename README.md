@@ -1,6 +1,6 @@
 # cucumber-symbolic-hashes
 
-A very simple extension gem used to remove duplication in cucumber test suite. 
+A very simple extension gem used to remove duplication in cucumber test suites. 
 
 # Example Usage
 ````ruby
