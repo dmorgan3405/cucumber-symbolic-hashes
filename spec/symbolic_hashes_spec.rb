@@ -1,5 +1,6 @@
 require 'rspec'
 require 'cucumber/ast/table'
+require_relative '../lib/cucumber-symbolic-hashes'
 
 module Cucumber
   module Ast
