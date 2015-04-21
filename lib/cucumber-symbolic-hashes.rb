@@ -1,6 +1,6 @@
 require 'cucumber'
 
-class Cucumber::Ast::Table
+class Cucumber::MultilineArgument::DataTable
 
   def symbolic_hashes
     @header_conversion_proc = lambda {|h| symbolize_key(h)}
@@ -10,7 +10,7 @@ class Cucumber::Ast::Table
   private
 
   def symbolize_key(key)
-    key.downcase.gsub(' ','_').to_sym
+    key.downcase.tr(' ','_').to_sym
   end
 
 end
