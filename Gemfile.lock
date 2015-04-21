@@ -31,6 +31,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bundler
   cucumber
   rake
   rspec
